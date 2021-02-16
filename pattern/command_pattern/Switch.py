@@ -1,4 +1,4 @@
-from commands import *
+from Commands import *
 from Weapons import *
 import time
 
