@@ -1,7 +1,7 @@
 from ursina import*
 
-from command_pattern.commands import*
-from command_pattern.Entities import*
+from command_pattern.Commands import*
+from command_pattern.Weapons import*
 from command_pattern.Switch import*
 
 arm_texture = load_texture('textures/arm_texture.png')
