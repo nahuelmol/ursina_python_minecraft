@@ -1,14 +1,13 @@
 from ursina import*
-from .Entities import Hand
+from .Entities import Hand, Weapon
+
 hand = Hand()
-
-block_color = 3
-
-print('Hola')
+block_color = 2
 
 def update():
 
 	global block_color  
+        global hand
 
 	if held_keys['left mouse'] or held_keys['right mouse']:
 		hand.active()
@@ -22,11 +21,9 @@ def update():
 		block_color = 2
 		print(block_color)
 	if held_keys['3']: 
-		block_color = 3
-		print(block_color)
+		hand = Weapon()
 	if held_keys['4']: 
-		block_color = 4
-		print(block_color)
+		hand = Sword()
 
 class Voxel(Button):
 	def __init__(self,position=(0,0,0),mycolor=color.white):
