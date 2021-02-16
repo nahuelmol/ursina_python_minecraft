@@ -3,6 +3,12 @@ from ursina import*
 arm_texture = load_texture('textures/arm_texture.png')
 heart_texture = load_texture('textures/heart.png')
 
+class Weapon(Entity):
+        def __init__(self):
+
+        def active(self):
+            Shot()
+        def passive(self):
 class Hand(Entity):
 	def __init__(self):
 		super().__init__(
