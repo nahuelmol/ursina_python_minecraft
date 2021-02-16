@@ -21,24 +21,24 @@ class Switch:
 		else:
 			print(f"Command [{command_name}] not recognised")
 
-if __name__ == "__main__":
-	mp4 = Mp4()
-	magnum = Magnum()
-
-	mp4_shot = Shot(mp4)
-	magnum_shot = Shot(magnum)
-	mp4_let_out = Throw(mp4)
-	magnum_let_out = Throw(mp4)
-
-	switch = Switch()
-
-	switch.register('shot_mp4',mp4_shot)
-
-	switch.execute('shot_mp4')
-	switch.execute('shot_mp4')
-	switch.execute('shot_mp4')
-	switch.execute('shot_mp4')
-	switch.execute('shot_mp4')
-	switch.execute('shot_mp4')
-	switch.execute('shot_mp4')
+#if __name__ == "__main__":
+#	mp4 = Mp4()
+#	magnum = Magnum()
+#
+#	mp4_shot = Shot(mp4)
+#	magnum_shot = Shot(magnum)
+#	mp4_let_out = Throw(mp4)
+#	magnum_let_out = Throw(mp4)
+#
+#	switch = Switch()
+#
+#	switch.register('shot_mp4',mp4_shot)
+#
+#	switch.execute('shot_mp4')
+#	switch.execute('shot_mp4')
+#	switch.execute('shot_mp4')
+#	switch.execute('shot_mp4')
+#	switch.execute('shot_mp4')
+#	switch.execute('shot_mp4')
+#	switch.execute('shot_mp4')
 
