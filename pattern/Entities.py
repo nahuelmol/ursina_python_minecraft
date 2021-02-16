@@ -1,5 +1,9 @@
 from ursina import*
 
+from command_pattern.commands import*
+from command_pattern.Entities import*
+from command_pattern.Switch import*
+
 arm_texture = load_texture('textures/arm_texture.png')
 heart_texture = load_texture('textures/heart.png')
 
@@ -7,7 +11,13 @@ class Weapon(Entity):
         def __init__(self):
 
         def active(self):
-            Shot()
+            mp4 = Mp4()
+	    mp4_shot = Shot(mp4)
+	
+	    switch = Switch()
+	    switch.register('shot_mp4',mp4_shot)
+	    switch.execute('shot_mp4')
+
         def passive(self):
 class Hand(Entity):
 	def __init__(self):
